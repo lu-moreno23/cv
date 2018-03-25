@@ -1,3 +1,7 @@
+body{
+  background-color: #61C0BF;
+}
+
 h1, h2{
   color:#FF467E;
   font-family: 'PT Sans', sans-serif;
@@ -17,7 +21,7 @@ h2{
 }
 
 #cv-image {
-  width:180px;
+  width:150px;
   float: left;
   clear: both;
   padding-top: 20px;
@@ -26,10 +30,13 @@ h2{
 }
 
 .menu{
-  width: 20%;
+  background-color: #BBDED6;
+  width: 15%;
   float: left;
-  clear: both;
   padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 2px ridge #FD94B4;
 }
 
 .button{
@@ -52,7 +59,12 @@ a{
 
 h3{
   font-size: 24px;
-  border-bottom: 2px solid #FD94B4;
+  border: 2px ridge #FD94B4;
+  margin: 0;
+}
+
+.section-title{
+  background-color: #ECFAFB;
 }
 
 h3, h4 {
@@ -75,23 +87,27 @@ ol{
   list-style: none;
 }
 
+@media (max-width: 1280px) {
+  .menu, .main-content{
+    width: 100%;
+    float: none;
+  }
+}
+
+
 .main-content{
-  width: 75%;
+  width: 80%;
   float: right;
-  position: relative;
 }
 
 #info-personal,#obj-profesionales, #exp-laboral, #for-academica, #herramientas,#portfolio {
   background: #ECECEB;
   padding-bottom: 2px;
   margin: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 #ciudad-zombie,#cv-icon,#encuestados,#mapa-interactivo,#peli,#pixel-art,#que-veo,#recargado,#rompecabezas{
   width: 150px;
-}
-
-#line-two{
-  padding-right: 80px;
-  padding-left: 80PX;
 }
